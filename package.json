@@ -18,5 +18,7 @@
   "bugs": {
     "url": "https://github.com/RaulAngelPerezGarcia/D-D5e_CB/issues"
   },
-  "homepage": "https://github.com/RaulAngelPerezGarcia/D-D5e_CB#readme"
+  "homepage": "https://github.com/RaulAngelPerezGarcia/D-D5e_CB#readme",
+  "dependencies": {
+  }
 }
