@@ -17,35 +17,69 @@
 	</head>
 	<body>
 		<!-- We code here -->
-		<div class="container text-center" >
-			<div class="row">
-				<h1>D&D calculator</h1>
-			</div>
-			<div class="row">	
-					<div class="col-sm-4">
-						<h3>STR</h3>
-					</div>
-					<div class="input-group col-sm-4">
-						<span class="input-group-btn">
-							<button type="button" class="btn btn-primary btn-number" data-type="minus" data-field="quant[2]""> <span class="glyphicon glyphicon-minus"></span> </button>
-						</span>
-						<input type="text" name="quant[2]" class="form-control input-number text-center" value="10">
-						<span class="input-group-btn">
-							<button type="button" class="btn btn-success btn-number" data-type="plus" data-field="quant[2]""> <span class="glyphicon glyphicon-plus"></span> </button>
-						</span>
-					</div>
-					<div class="col-sm-4">
-							<input type="text" name="" class="form-control input-number text-center" value="1">
-					</div>
-			</div>
+		<div class="container text-center" id="calc">
+			<div class="col-md-12 col-md-offset-4 text-center">
 
-			<div class="row">
-				<footer class="col-sm-12">
-					<p class="text-center">&copy; Angel copyright 2016</p>
-				</footer>
+				<div class="row">
+					<h1>D&D Bootstrap Calculator</h1>
+				</div>
+
+				<div class="row">
+					<form name="STR">
+						<input type="text" class="screen text-right" name="result" readonly>
+					</form>
+					<form name="STR">
+						<input type="text" class="screen text-right" name="result" readonly>
+					</form>
+					<form name="STR">
+						<input type="text" class="screen text-right" name="result" readonly>
+					</form>
+					<form name="STR">
+						<input type="text" class="screen text-right" name="result" readonly>
+					</form>
+					<form name="STR">
+						<input type="text" class="screen text-right" name="result" readonly>
+					</form>
+				</div>
+
+				<div class="row">
+					<button id="7" type="button" class="btn btn-info" onclick="myFunction(this.id)">7</button>
+					<button id="8" type="button" class="btn btn-info" onclick="myFunction(this.id)">8</button>
+					<button id="9" type="button" class="btn btn-info" onclick="myFunction(this.id)">9</button>
+					<button id="*" type="button" class="btn btn-info" onclick="myFunction(this.id)">x</button>
+				</div>
+
+				<div class="row">
+					<button id="4" type="button" class="btn btn-info" onclick="myFunction(this.id)">4</button>
+					<button id="5" type="button" class="btn btn-info" onclick="myFunction(this.id)">5</button>
+					<button id="6" type="button" class="btn btn-info" onclick="myFunction(this.id)">6</button>
+					<button id="-" type="button" class="btn btn-info" onclick="myFunction(this.id)">-</button>
+				</div>
+
+				<div class="row">
+					<button id="1" type="button" class="btn btn-info" onclick="myFunction(this.id)">1</button>
+					<button id="2" type="button" class="btn btn-info" onclick="myFunction(this.id)">2</button>
+					<button id="3" type="button" class="btn btn-info" onclick="myFunction(this.id)">3</button>
+					<button id="+" type="button" class="btn btn-info" onclick="myFunction(this.id)">+</button>
+				</div>
+
+				<div class="row">
+					<button id="0" type="button" class="btn btn-info" onclick="myFunction(this.id)">0</button>
+					<button id="." type="button" class="btn btn-info" onclick="myFunction(this.id)">.</button>
+					<button id="equals" type="button" class="btn btn-success" onclick="calculate()">=</button>
+					<button id="blank" type="button" class="btn btn-info">&nbsp;</button>
+				</div>
+
+				<div class="row">
+					<footer class="col-sm-12">
+						<p class="text-center">&copy; Angel copyright 2016</p>
+					</footer>
+				</div>
+
 			</div>
 		</div>
-		
+
+
 
 		<!-- JavaScript files should be linked at the bottom of the page -->
 		<!-- jQuery -->
