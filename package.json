@@ -20,5 +20,8 @@
   },
   "homepage": "https://github.com/RaulAngelPerezGarcia/D-D5e_CB#readme",
   "dependencies": {
+    "bootstrap": "^3.3.7",
+    "express": "^4.14.0",
+    "jquery": "^3.1.1"
   }
 }
