@@ -1,15 +1,13 @@
 <!DOCTYPE html>
-<!-- This is how you write code in HTML -->
 
 <html lang="en">
 	<head>
-		<meta charset="utf-8"><!-- To make sure the website is unicode? -->
+		<meta charset="utf-8">
 		<title> D&D 5e Character Builder</title>
 
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
 
-		<!-- Optional theme -->
 		<link rel="stylesheet" href="bootstrap/dist/css/bootstrap-theme.min.css">
 
 		<!-- This is a custom CSS file -->
@@ -17,67 +15,197 @@
 	</head>
 	<body>
 		<!-- We code here -->
-		<div class="container text-center" id="calc">
-			<div class="col-md-12 col-md-offset-4 text-center">
+		<div class="container-fluid text-center" id="calc">
 
 				<div class="row">
 					<h1>D&D Bootstrap Calculator</h1>
 				</div>
+				<!--.row-->
 
 				<div class="row">
-					<form name="STR">
-						<input type="text" class="screen text-right" name="result" readonly>
-					</form>
-					<form name="STR">
-						<input type="text" class="screen text-right" name="result" readonly>
-					</form>
-					<form name="STR">
-						<input type="text" class="screen text-right" name="result" readonly>
-					</form>
-					<form name="STR">
-						<input type="text" class="screen text-right" name="result" readonly>
-					</form>
-					<form name="STR">
-						<input type="text" class="screen text-right" name="result" readonly>
-					</form>
-				</div>
+					<div class="col-xs-12">
+						<div class="panel panel-default">
 
-				<div class="row">
-					<button id="7" type="button" class="btn btn-info" onclick="myFunction(this.id)">7</button>
-					<button id="8" type="button" class="btn btn-info" onclick="myFunction(this.id)">8</button>
-					<button id="9" type="button" class="btn btn-info" onclick="myFunction(this.id)">9</button>
-					<button id="*" type="button" class="btn btn-info" onclick="myFunction(this.id)">x</button>
-				</div>
+							<div class="panel-heading">
+								<h3>Point Buy System</h3>
+							</div>
 
-				<div class="row">
-					<button id="4" type="button" class="btn btn-info" onclick="myFunction(this.id)">4</button>
-					<button id="5" type="button" class="btn btn-info" onclick="myFunction(this.id)">5</button>
-					<button id="6" type="button" class="btn btn-info" onclick="myFunction(this.id)">6</button>
-					<button id="-" type="button" class="btn btn-info" onclick="myFunction(this.id)">-</button>
-				</div>
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-xs-2 col-xs-offset-2">Base</div>
+									<div class="col-xs-2">Racial bonus</div>
+									<div class="col-xs-2">Score</div>
+									<div class="col-xs-2">Modifier</div>
+									<div class="col-xs-2">Cost</div>
+									<!--
+									<form  class="col-xs-2 col-xs-offset-2">
+										<input type="text" class="text-center" value="Base" readonly>
+									</form>
+									<form class="col-xs-2">
+										<input type="text" class="text-center" value="Racial Bonus" readonly>
+									</form>
+									<form  class="col-xs-2">
+										<input type="text" class="text-center" value="Score" readonly>
+									</form>
+									<form  class="col-xs-2">
+										<input type="text" class="text-center" value="Modifier" readonly>
+									</form>
+									<form  class="col-xs-2">
+										<input type="text" class="text-center" value="Cost" readonly>
+									</form>
+									-->
+								</div>
+								<!--.row-->
+	
+								<div class="row">
+									<div class="col-xs-2">STR</div>
+									<div class="col-xs-2 ">
+										<div class="input-group">
+											<span class="input-group-btn">
+											<button type="button" class="btn btn-info" ><span class="glyphicon glyphicon-minus"></span></button>
+											</span>
+											<input type="text" name="quant[1]" class="form-control text-center" value="8">
+											<span class="input-group-btn">
+											<button type="button" class="btn btn-success" ><span class="glyphicon glyphicon-plus"></span></button>
+											</span>
+										</div>
+									</div>
+									<div class="col-xs-2">XbonusX</div>
+									<div class="col-xs-2">XscoreX</div>
+									<div class="col-xs-2">XmodifierX</div>
+									<div class="col-xs-2">XcostX</div>
+								</div>
+								<!--.row-->
+	
+								<div class="row">
+									<div class="col-xs-2">DEX</div>
+									<div class="col-xs-2 ">
+										<div class="input-group">
+											<span class="input-group-btn">
+											<button type="button" class="btn btn-info" ><span class="glyphicon glyphicon-minus"></span></button>
+											</span>
+											<input type="text" name="quant[1]" class="form-control text-center" value="8">
+											<span class="input-group-btn">
+											<button type="button" class="btn btn-success" ><span class="glyphicon glyphicon-plus"></span></button>
+											</span>
+										</div>
+									</div>
+									<div class="col-xs-2">XbonusX</div>
+									<div class="col-xs-2">XscoreX</div>
+									<div class="col-xs-2">XmodifierX</div>
+									<div class="col-xs-2">XcostX</div>
+								</div>
+								<!--.row-->
+	
+								<div class="row">
+									<div class="col-xs-2">CON</div>
+									<div class="col-xs-2 ">
+										<div class="input-group">
+											<span class="input-group-btn">
+											<button type="button" class="btn btn-info" ><span class="glyphicon glyphicon-minus"></span></button>
+											</span>
+											<input type="text" name="quant[1]" class="form-control text-center" value="8">
+											<span class="input-group-btn">
+											<button type="button" class="btn btn-success" ><span class="glyphicon glyphicon-plus"></span></button>
+											</span>
+										</div>
+									</div>
+									<div class="col-xs-2">XbonusX</div>
+									<div class="col-xs-2">XscoreX</div>
+									<div class="col-xs-2">XmodifierX</div>
+									<div class="col-xs-2">XcostX</div>
+								</div>
+								<!--.row-->
+	
+								<div class="row">
+									<div class="col-xs-2">INT</div>
+									<div class="col-xs-2 ">
+										<div class="input-group">
+											<span class="input-group-btn">
+											<button type="button" class="btn btn-info" ><span class="glyphicon glyphicon-minus"></span></button>
+											</span>
+											<input type="text" name="quant[1]" class="form-control text-center" value="8">
+											<span class="input-group-btn">
+											<button type="button" class="btn btn-success" ><span class="glyphicon glyphicon-plus"></span></button>
+											</span>
+										</div>
+									</div>
+									<div class="col-xs-2">XbonusX</div>
+									<div class="col-xs-2">XscoreX</div>
+									<div class="col-xs-2">XmodifierX</div>
+									<div class="col-xs-2">XcostX</div>
+								</div>
+								<!--.row-->
+	
+								<div class="row">
+									<div class="col-xs-2">WIS</div>
+									<div class="col-xs-2 ">
+										<div class="input-group">
+											<span class="input-group-btn">
+											<button type="button" class="btn btn-info" ><span class="glyphicon glyphicon-minus"></span></button>
+											</span>
+											<input type="text" name="quant[1]" class="form-control text-center" value="8">
+											<span class="input-group-btn">
+											<button type="button" class="btn btn-success" ><span class="glyphicon glyphicon-plus"></span></button>
+											</span>
+										</div>
+									</div>
+									<div class="col-xs-2">XbonusX</div>
+									<div class="col-xs-2">XscoreX</div>
+									<div class="col-xs-2">XmodifierX</div>
+									<div class="col-xs-2">XcostX</div>
+								</div>
+								<!--.row-->
+	
+								<div class="row">
+									<div class="col-xs-2">CHA</div>
+									<div class="col-xs-2 ">
+										<div class="input-group">
+											<span class="input-group-btn">
+											<button type="button" class="btn btn-info" ><span class="glyphicon glyphicon-minus"></span></button>
+											</span>
+											<input type="text" name="quant[1]" class="form-control text-center" value="8">
+											<span class="input-group-btn">
+											<button type="button" class="btn btn-success" ><span class="glyphicon glyphicon-plus"></span></button>
+											</span>
+										</div>
+									</div>
+									<div class="col-xs-2">XbonusX</div>
+									<div class="col-xs-2">XscoreX</div>
+									<div class="col-xs-2">XmodifierX</div>
+									<div class="col-xs-2">XcostX</div>
+								</div>
+								<!--.row-->
 
-				<div class="row">
-					<button id="1" type="button" class="btn btn-info" onclick="myFunction(this.id)">1</button>
-					<button id="2" type="button" class="btn btn-info" onclick="myFunction(this.id)">2</button>
-					<button id="3" type="button" class="btn btn-info" onclick="myFunction(this.id)">3</button>
-					<button id="+" type="button" class="btn btn-info" onclick="myFunction(this.id)">+</button>
+							</div>
+							<!--.panel-body-->
+						</div>
+						<!--.panel-->
+					</div>
+					<!--.col-xs-12-->	
 				</div>
+				<!--.row-->
 
+
+
+				<!--
 				<div class="row">
 					<button id="0" type="button" class="btn btn-info" onclick="myFunction(this.id)">0</button>
 					<button id="." type="button" class="btn btn-info" onclick="myFunction(this.id)">.</button>
 					<button id="equals" type="button" class="btn btn-success" onclick="calculate()">=</button>
 					<button id="blank" type="button" class="btn btn-info">&nbsp;</button>
 				</div>
+				-->
+				<!--.row-->
 
 				<div class="row">
-					<footer class="col-sm-12">
+					<footer class="col-xs-12">
 						<p class="text-center">&copy; Angel copyright 2016</p>
 					</footer>
 				</div>
 
-			</div>
 		</div>
+		<!--.container-->
 
 
 
