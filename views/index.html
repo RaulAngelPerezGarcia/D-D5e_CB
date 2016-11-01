@@ -37,23 +37,6 @@
 									<div class="col-xs-2">Score</div>
 									<div class="col-xs-2">Modifier</div>
 									<div class="col-xs-2">Cost</div>
-									<!--
-									<form  class="col-xs-2 col-xs-offset-2">
-										<input type="text" class="text-center" value="Base" readonly>
-									</form>
-									<form class="col-xs-2">
-										<input type="text" class="text-center" value="Racial Bonus" readonly>
-									</form>
-									<form  class="col-xs-2">
-										<input type="text" class="text-center" value="Score" readonly>
-									</form>
-									<form  class="col-xs-2">
-										<input type="text" class="text-center" value="Modifier" readonly>
-									</form>
-									<form  class="col-xs-2">
-										<input type="text" class="text-center" value="Cost" readonly>
-									</form>
-									-->
 								</div>
 								<!--.row-->
 	
@@ -62,11 +45,15 @@
 									<div class="col-xs-2 ">
 										<div class="input-group">
 											<span class="input-group-btn">
-											<button type="button" class="btn btn-info" ><span class="glyphicon glyphicon-minus"></span></button>
+												<button type="button" class="btn btn-info" onclick="decStr()">
+													<span class="glyphicon glyphicon-minus" ></span>
+												</button>
 											</span>
-											<input type="text" name="quant[1]" class="form-control text-center" value="8">
+											<input type="text" class="form-control text-center" value="8" id="dispStr" readonly>
 											<span class="input-group-btn">
-											<button type="button" class="btn btn-success" ><span class="glyphicon glyphicon-plus"></span></button>
+												<button type="button" class="btn btn-success" onclick="incStr()">
+													<span class="glyphicon glyphicon-plus"></span>
+												</button>
 											</span>
 										</div>
 									</div>
@@ -82,11 +69,13 @@
 									<div class="col-xs-2 ">
 										<div class="input-group">
 											<span class="input-group-btn">
-											<button type="button" class="btn btn-info" ><span class="glyphicon glyphicon-minus"></span></button>
+												<button type="button" class="btn btn-info" >
+													<span class="glyphicon glyphicon-minus"></span>
+												</button>
 											</span>
 											<input type="text" name="quant[1]" class="form-control text-center" value="8">
 											<span class="input-group-btn">
-											<button type="button" class="btn btn-success" ><span class="glyphicon glyphicon-plus"></span></button>
+												<button type="button" class="btn btn-success" ><span class="glyphicon glyphicon-plus"></span></button>
 											</span>
 										</div>
 									</div>
