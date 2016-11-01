@@ -22,9 +22,9 @@
 				</div>
 				<!--.row-->
 
-				<div class="row">
-					<div class="col-xs-12">
-						<div class="panel panel-default">
+				<div class="row" id="pan1">
+					<div class="col-xs-12" id="pan2">
+						<div class="panel panel-default" id="pan3">
 
 							<div class="panel-heading">
 								<h3>Point Buy System</h3>
@@ -40,131 +40,46 @@
 								</div>
 								<!--.row-->
 	
-								<div class="row">
-									<div class="col-xs-2">STR</div>
-									<div class="col-xs-2 ">
-										<div class="input-group">
+								<div class="row" id="strength">
+									<div class="col-xs-1 col-xs-offset-1">STR</div>
+									<div class="col-xs-2 " id="baseStr">
+										<div class="input-group" id="baseStr2">
 											<span class="input-group-btn">
-												<button type="button" class="btn btn-info" onclick="decStr()">
+												<button type="button" class="btn btn-info" id="decStr" onclick="myFunction(this.id)">
 													<span class="glyphicon glyphicon-minus" ></span>
 												</button>
 											</span>
 											<input type="text" class="form-control text-center" value="8" id="dispStr" readonly>
 											<span class="input-group-btn">
-												<button type="button" class="btn btn-success" onclick="incStr()">
+												<button type="button" class="btn btn-success" id="incStr" onclick="incBase(this.id)">
 													<span class="glyphicon glyphicon-plus"></span>
 												</button>
 											</span>
 										</div>
 									</div>
-									<div class="col-xs-2">XbonusX</div>
-									<div class="col-xs-2">XscoreX</div>
-									<div class="col-xs-2">XmodifierX</div>
-									<div class="col-xs-2">XcostX</div>
+									<div class="col-xs-2">
+										<span>
+											<input type="text" class="form-control text-center" value="0" id="racialStr" readonly>
+										</span>
+									</div>
+									<div class="col-xs-2">
+										<span>
+											<input type="text" class="form-control text-center" value="0" id="scoreStr" readonly>
+										</span>
+									</div>
+									<div class="col-xs-2">
+										<span>
+											<input type="text" class="form-control text-center" value="+0" id="modifierStr" readonly>
+										</span>
+									</div>
+									<div class="col-xs-2">
+										<span>
+											<input type="text" class="form-control text-center" value="0" id="cost" readonly>
+										</span>
+									</div>
 								</div>
 								<!--.row-->
 	
-								<div class="row">
-									<div class="col-xs-2">DEX</div>
-									<div class="col-xs-2 ">
-										<div class="input-group">
-											<span class="input-group-btn">
-												<button type="button" class="btn btn-info" >
-													<span class="glyphicon glyphicon-minus"></span>
-												</button>
-											</span>
-											<input type="text" name="quant[1]" class="form-control text-center" value="8">
-											<span class="input-group-btn">
-												<button type="button" class="btn btn-success" ><span class="glyphicon glyphicon-plus"></span></button>
-											</span>
-										</div>
-									</div>
-									<div class="col-xs-2">XbonusX</div>
-									<div class="col-xs-2">XscoreX</div>
-									<div class="col-xs-2">XmodifierX</div>
-									<div class="col-xs-2">XcostX</div>
-								</div>
-								<!--.row-->
-	
-								<div class="row">
-									<div class="col-xs-2">CON</div>
-									<div class="col-xs-2 ">
-										<div class="input-group">
-											<span class="input-group-btn">
-											<button type="button" class="btn btn-info" ><span class="glyphicon glyphicon-minus"></span></button>
-											</span>
-											<input type="text" name="quant[1]" class="form-control text-center" value="8">
-											<span class="input-group-btn">
-											<button type="button" class="btn btn-success" ><span class="glyphicon glyphicon-plus"></span></button>
-											</span>
-										</div>
-									</div>
-									<div class="col-xs-2">XbonusX</div>
-									<div class="col-xs-2">XscoreX</div>
-									<div class="col-xs-2">XmodifierX</div>
-									<div class="col-xs-2">XcostX</div>
-								</div>
-								<!--.row-->
-	
-								<div class="row">
-									<div class="col-xs-2">INT</div>
-									<div class="col-xs-2 ">
-										<div class="input-group">
-											<span class="input-group-btn">
-											<button type="button" class="btn btn-info" ><span class="glyphicon glyphicon-minus"></span></button>
-											</span>
-											<input type="text" name="quant[1]" class="form-control text-center" value="8">
-											<span class="input-group-btn">
-											<button type="button" class="btn btn-success" ><span class="glyphicon glyphicon-plus"></span></button>
-											</span>
-										</div>
-									</div>
-									<div class="col-xs-2">XbonusX</div>
-									<div class="col-xs-2">XscoreX</div>
-									<div class="col-xs-2">XmodifierX</div>
-									<div class="col-xs-2">XcostX</div>
-								</div>
-								<!--.row-->
-	
-								<div class="row">
-									<div class="col-xs-2">WIS</div>
-									<div class="col-xs-2 ">
-										<div class="input-group">
-											<span class="input-group-btn">
-											<button type="button" class="btn btn-info" ><span class="glyphicon glyphicon-minus"></span></button>
-											</span>
-											<input type="text" name="quant[1]" class="form-control text-center" value="8">
-											<span class="input-group-btn">
-											<button type="button" class="btn btn-success" ><span class="glyphicon glyphicon-plus"></span></button>
-											</span>
-										</div>
-									</div>
-									<div class="col-xs-2">XbonusX</div>
-									<div class="col-xs-2">XscoreX</div>
-									<div class="col-xs-2">XmodifierX</div>
-									<div class="col-xs-2">XcostX</div>
-								</div>
-								<!--.row-->
-	
-								<div class="row">
-									<div class="col-xs-2">CHA</div>
-									<div class="col-xs-2 ">
-										<div class="input-group">
-											<span class="input-group-btn">
-											<button type="button" class="btn btn-info" ><span class="glyphicon glyphicon-minus"></span></button>
-											</span>
-											<input type="text" name="quant[1]" class="form-control text-center" value="8">
-											<span class="input-group-btn">
-											<button type="button" class="btn btn-success" ><span class="glyphicon glyphicon-plus"></span></button>
-											</span>
-										</div>
-									</div>
-									<div class="col-xs-2">XbonusX</div>
-									<div class="col-xs-2">XscoreX</div>
-									<div class="col-xs-2">XmodifierX</div>
-									<div class="col-xs-2">XcostX</div>
-								</div>
-								<!--.row-->
 
 							</div>
 							<!--.panel-body-->
