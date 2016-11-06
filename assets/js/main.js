@@ -3,22 +3,6 @@ Here we write all the logic needed for the page to work
 */
 update();
 
-function update(){
-	calculateAll('Str');
-	calculateAll('Dex');
-	calculateAll('Con');
-	calculateAll('Int');
-	calculateAll('Wis');
-	calculateAll('Cha');
-};
-
-function calculateAll(idTag){
-	calcScore(idTag);
-	calcMod(idTag);
-	document.getElementById('cost'+idTag).value = calcCost(document.getElementById('disp'+idTag).value);
-	remaining();
-}
-
 
 // Here all the Base values are calculated
 function incBase(idTag){
@@ -50,7 +34,6 @@ function decBase(idTag){
 }
 
 // This function handles the remaining points 
-
 function remaining(){
 	var remp = +27 - +totalCost()
 	document.getElementById('remp').value = +remp;
@@ -66,6 +49,174 @@ function totalCost(){
 		+ +document.getElementById('costCha').value;
 	return +totCost;
 }
+
+
+// Sets the racial bonuses for each id
+function selectedRace(id, textIn){
+
+	if (id == "human"){
+		document.getElementById('racialStr').value = 1;
+		document.getElementById('racialDex').value = 1;
+		document.getElementById('racialCon').value = 1;
+		document.getElementById('racialInt').value = 1;
+		document.getElementById('racialWis').value = 1;
+		document.getElementById('racialCha').value = 1;		
+	} else if (id == "dwarfHill"){
+		document.getElementById('racialStr').value = 0;
+		document.getElementById('racialDex').value = 0;
+		document.getElementById('racialCon').value = 2;
+		document.getElementById('racialInt').value = 0;
+		document.getElementById('racialWis').value = 1;
+		document.getElementById('racialCha').value = 0;		
+	} else if (id == "dwarfMountain"){
+		document.getElementById('racialStr').value = 2;
+		document.getElementById('racialDex').value = 0;
+		document.getElementById('racialCon').value = 2;
+		document.getElementById('racialInt').value = 0;
+		document.getElementById('racialWis').value = 0;
+		document.getElementById('racialCha').value = 0;		
+	} else if (id == "elfHigh"){
+		document.getElementById('racialStr').value = 0;
+		document.getElementById('racialDex').value = 2;
+		document.getElementById('racialCon').value = 0;
+		document.getElementById('racialInt').value = 1;
+		document.getElementById('racialWis').value = 0;
+		document.getElementById('racialCha').value = 1;		
+	} else if (id == "elfWood"){
+		document.getElementById('racialStr').value = 0;
+		document.getElementById('racialDex').value = 2;
+		document.getElementById('racialCon').value = 0;
+		document.getElementById('racialInt').value = 0;
+		document.getElementById('racialWis').value = 1;
+		document.getElementById('racialCha').value = 0;		
+	} else if (id == "elfDrow"){
+		document.getElementById('racialStr').value = 0;
+		document.getElementById('racialDex').value = 2;
+		document.getElementById('racialCon').value = 0;
+		document.getElementById('racialInt').value = 0;
+		document.getElementById('racialWis').value = 0;
+		document.getElementById('racialCha').value = 1;		
+	} else if (id == "halflingLightfoot"){
+		document.getElementById('racialStr').value = 0;
+		document.getElementById('racialDex').value = 2;
+		document.getElementById('racialCon').value = 0;
+		document.getElementById('racialInt').value = 0;
+		document.getElementById('racialWis').value = 0;
+		document.getElementById('racialCha').value = 1;		
+	} else if (id == "halflingStout"){
+		document.getElementById('racialStr').value = 0;
+		document.getElementById('racialDex').value = 2;
+		document.getElementById('racialCon').value = 1;
+		document.getElementById('racialInt').value = 0;
+		document.getElementById('racialWis').value = 0;
+		document.getElementById('racialCha').value = 0;		
+	} else if (id == "dragonborn"){
+		document.getElementById('racialStr').value = 2;
+		document.getElementById('racialDex').value = 0;
+		document.getElementById('racialCon').value = 0;
+		document.getElementById('racialInt').value = 0;
+		document.getElementById('racialWis').value = 0;
+		document.getElementById('racialCha').value = 1;		
+	} else if (id == "gnomeForest"){
+		document.getElementById('racialStr').value = 0;
+		document.getElementById('racialDex').value = 1;
+		document.getElementById('racialCon').value = 0;
+		document.getElementById('racialInt').value = 2;
+		document.getElementById('racialWis').value = 0;
+		document.getElementById('racialCha').value = 0;		
+	} else if (id == "gnomeRock"){
+		document.getElementById('racialStr').value = 0;
+		document.getElementById('racialDex').value = 0;
+		document.getElementById('racialCon').value = 1;
+		document.getElementById('racialInt').value = 2;
+		document.getElementById('racialWis').value = 0;
+		document.getElementById('racialCha').value = 0;		
+	} else if (id == "halfElf"){
+		document.getElementById('racialStr').value = 2;
+		document.getElementById('racialDex').value = 0;
+		document.getElementById('racialCon').value = 0;
+		document.getElementById('racialInt').value = 0;
+		document.getElementById('racialWis').value = 0;
+		document.getElementById('racialCha').value = 1;		
+	} else if (id == "halfOrc"){
+		document.getElementById('racialStr').value = 2;
+		document.getElementById('racialDex').value = 0;
+		document.getElementById('racialCon').value = 1;
+		document.getElementById('racialInt').value = 0;
+		document.getElementById('racialWis').value = 0;
+		document.getElementById('racialCha').value = 0;		
+	} else if (id == "tiefling"){
+		document.getElementById('racialStr').value = 0;
+		document.getElementById('racialDex').value = 0;
+		document.getElementById('racialCon').value = 0;
+		document.getElementById('racialInt').value = 1;
+		document.getElementById('racialWis').value = 0;
+		document.getElementById('racialCha').value = 2;		
+	} else{
+		document.getElementById('racialStr').value = 0;
+		document.getElementById('racialDex').value = 0;
+		document.getElementById('racialCon').value = 0;
+		document.getElementById('racialInt').value = 0;
+		document.getElementById('racialWis').value = 0;
+		document.getElementById('racialCha').value = 0;	
+	}
+	console.log(textIn);
+	dropdown(textIn);
+	update();
+}
+
+
+// Select the id function
+function selectedClass(id, textIn){
+	dropdown(textIn);
+}
+
+
+//This function sets the name of the dropdown to the selected token
+function dropdown(val) {
+	var y = document.getElementsByClassName('btn btn-info btn-lg btn-block dropdown-toggle');
+	var aNode = y[0].innerHTML = val + ' <span class="caret"></span>'; // Append 
+}
+
+
+
+function update(){
+	calculateAll('Str');
+	calculateAll('Dex');
+	calculateAll('Con');
+	calculateAll('Int');
+	calculateAll('Wis');
+	calculateAll('Cha');
+};
+
+function calculateAll(idTag){
+	calcScore(idTag);
+	calcMod(idTag);
+	document.getElementById('cost'+idTag).value = calcCost(document.getElementById('disp'+idTag).value);
+	remaining();
+}
+
+
+// Here all the Scores values are calculated
+function calcScore(idTag){
+	var base = document.getElementById('disp'+idTag).value;
+	var racial = document.getElementById('racial'+idTag).value;
+	document.getElementById('score' + idTag).value =  +base + +racial;
+}
+
+
+// Here all the Modifiers values are calculated
+function calcMod(idTag){
+	var score = document.getElementById('score'+idTag).value;
+	var modifier;
+	modifier = Math.floor((score/2)-5)
+	if (modifier>0){
+		document.getElementById('modifier'+idTag).value = '+' + modifier;
+	}else{
+		document.getElementById('modifier'+idTag).value = modifier;	
+	}
+}
+
 
 function calcCost(number){
 	var cost = 50;
@@ -90,157 +241,3 @@ function calcCost(number){
 	}
 	return cost;
 }
-
-
-// Here all the Scores values are calculated
-function calcScore(idTag){
-	var base = document.getElementById('disp'+idTag).value;
-	var racial = document.getElementById('racial'+idTag).value;
-	document.getElementById('score' + idTag).value =  +base + +racial;
-}
-
-
-// Here all the Modifiers values are calculated
-function calcMod(idTag){
-	var score = document.getElementById('score'+idTag).value;
-	var modifier;
-	modifier = Math.floor((score/2)-5)
-	if (modifier>0){
-		document.getElementById('modifier'+idTag).value = '+' + modifier;
-	}else{
-		document.getElementById('modifier'+idTag).value = modifier;	
-	}
-}
-
-// Sets the racial bonuses for each race
-function selectedRace(race, selected){
-
-	if (race == "human"){
-		document.getElementById('racialStr').value = 1;
-		document.getElementById('racialDex').value = 1;
-		document.getElementById('racialCon').value = 1;
-		document.getElementById('racialInt').value = 1;
-		document.getElementById('racialWis').value = 1;
-		document.getElementById('racialCha').value = 1;		
-	} else if (race == "dwarfHill"){
-		document.getElementById('racialStr').value = 0;
-		document.getElementById('racialDex').value = 0;
-		document.getElementById('racialCon').value = 2;
-		document.getElementById('racialInt').value = 0;
-		document.getElementById('racialWis').value = 1;
-		document.getElementById('racialCha').value = 0;		
-	} else if (race == "dwarfMountain"){
-		document.getElementById('racialStr').value = 2;
-		document.getElementById('racialDex').value = 0;
-		document.getElementById('racialCon').value = 2;
-		document.getElementById('racialInt').value = 0;
-		document.getElementById('racialWis').value = 0;
-		document.getElementById('racialCha').value = 0;		
-	} else if (race == "elfHigh"){
-		document.getElementById('racialStr').value = 0;
-		document.getElementById('racialDex').value = 2;
-		document.getElementById('racialCon').value = 0;
-		document.getElementById('racialInt').value = 1;
-		document.getElementById('racialWis').value = 0;
-		document.getElementById('racialCha').value = 1;		
-	} else if (race == "elfWood"){
-		document.getElementById('racialStr').value = 0;
-		document.getElementById('racialDex').value = 2;
-		document.getElementById('racialCon').value = 0;
-		document.getElementById('racialInt').value = 0;
-		document.getElementById('racialWis').value = 1;
-		document.getElementById('racialCha').value = 0;		
-	} else if (race == "elfDrow"){
-		document.getElementById('racialStr').value = 0;
-		document.getElementById('racialDex').value = 2;
-		document.getElementById('racialCon').value = 0;
-		document.getElementById('racialInt').value = 0;
-		document.getElementById('racialWis').value = 0;
-		document.getElementById('racialCha').value = 1;		
-	} else if (race == "halflingLightfoot"){
-		document.getElementById('racialStr').value = 0;
-		document.getElementById('racialDex').value = 2;
-		document.getElementById('racialCon').value = 0;
-		document.getElementById('racialInt').value = 0;
-		document.getElementById('racialWis').value = 0;
-		document.getElementById('racialCha').value = 1;		
-	} else if (race == "halflingStout"){
-		document.getElementById('racialStr').value = 0;
-		document.getElementById('racialDex').value = 2;
-		document.getElementById('racialCon').value = 1;
-		document.getElementById('racialInt').value = 0;
-		document.getElementById('racialWis').value = 0;
-		document.getElementById('racialCha').value = 0;		
-	} else if (race == "dragonborn"){
-		document.getElementById('racialStr').value = 2;
-		document.getElementById('racialDex').value = 0;
-		document.getElementById('racialCon').value = 0;
-		document.getElementById('racialInt').value = 0;
-		document.getElementById('racialWis').value = 0;
-		document.getElementById('racialCha').value = 1;		
-	} else if (race == "gnomeForest"){
-		document.getElementById('racialStr').value = 0;
-		document.getElementById('racialDex').value = 1;
-		document.getElementById('racialCon').value = 0;
-		document.getElementById('racialInt').value = 2;
-		document.getElementById('racialWis').value = 0;
-		document.getElementById('racialCha').value = 0;		
-	} else if (race == "gnomeRock"){
-		document.getElementById('racialStr').value = 0;
-		document.getElementById('racialDex').value = 0;
-		document.getElementById('racialCon').value = 1;
-		document.getElementById('racialInt').value = 2;
-		document.getElementById('racialWis').value = 0;
-		document.getElementById('racialCha').value = 0;		
-	} else if (race == "halfElf"){
-		document.getElementById('racialStr').value = 2;
-		document.getElementById('racialDex').value = 0;
-		document.getElementById('racialCon').value = 0;
-		document.getElementById('racialInt').value = 0;
-		document.getElementById('racialWis').value = 0;
-		document.getElementById('racialCha').value = 1;		
-	} else if (race == "halfOrc"){
-		document.getElementById('racialStr').value = 2;
-		document.getElementById('racialDex').value = 0;
-		document.getElementById('racialCon').value = 1;
-		document.getElementById('racialInt').value = 0;
-		document.getElementById('racialWis').value = 0;
-		document.getElementById('racialCha').value = 0;		
-	} else if (race == "tiefling"){
-		document.getElementById('racialStr').value = 0;
-		document.getElementById('racialDex').value = 0;
-		document.getElementById('racialCon').value = 0;
-		document.getElementById('racialInt').value = 1;
-		document.getElementById('racialWis').value = 0;
-		document.getElementById('racialCha').value = 2;		
-	} else{
-		document.getElementById('racialStr').value = 0;
-		document.getElementById('racialDex').value = 0;
-		document.getElementById('racialCon').value = 0;
-		document.getElementById('racialInt').value = 0;
-		document.getElementById('racialWis').value = 0;
-		document.getElementById('racialCha').value = 0;	
-	}
-	console.log(selected);
-	dropdown(selected);
-	update();
-}
-
-
-//This function sets the name of the dropdown to the selected token
-function dropdown(val) {
-  var y = document.getElementsByClassName('btn btn-default dropdown-toggle');
-  var aNode = y[0].innerHTML = val + ' <span class="caret"></span>'; // Append 
-}
-
-// This function resets the calculator
-function clearing(){
-	selectedRace("none","Choose a race");
-	document.getElementById('disp' + 'Str').value = 8;
-	document.getElementById('disp' + 'Dex').value = 8;
-	document.getElementById('disp' + 'Con').value = 8;
-	document.getElementById('disp' + 'Int').value = 8;
-	document.getElementById('disp' + 'Wis').value = 8;
-	document.getElementById('disp' + 'Cha').value = 8;
-	update();
-};

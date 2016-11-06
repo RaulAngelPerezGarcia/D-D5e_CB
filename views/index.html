@@ -5,13 +5,11 @@
 		<meta charset="utf-8">
 		<title> D&D 5e Character Builder</title>
 
-		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
 
 		<link rel="stylesheet" href="bootstrap/dist/css/bootstrap-theme.min.css">
 
-		<!-- This is a custom CSS file -->
-		<link rel="stylesheet" href="public/css/main.css">
+		<link rel="stylesheet" href="css/main.css">
 	</head>
 	<body>
 		<!-- We code here -->
@@ -23,7 +21,45 @@
 				<!--.row-->
 
 				<div class="row">
-						<div class="panel panel-default ">
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h3>Classes</h3>
+						</div>
+						<div class="panel-body">
+							<div class="col-xs-12">
+									<div class="btn-group btn-lg btn-block dropdown">
+										<button class="btn btn-info btn-lg btn-block dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-hashpopup="true">
+											Choose a class <span class="caret"></span>
+										</button>
+										<ul class="dropdown-menu  text-center dropdown-menu-center" aria-labelledby="dropdownMenu2">
+											<li><a href="#" id="barbarian" onclick="selectedClass(this.id, this.innerHTML)">Barbarian</a></li>
+											<li><a href="#" id="bard" onclick="selectedClass(this.id, this.innerHTML)">Bard</a></li>
+											<li><a href="#" id="cleric" onclick="selectedClass(this.id, this.innerHTML)">Cleric</a></li>
+											<li><a href="#" id="druid" onclick="selectedClass(this.id, this.innerHTML)">Druid</a></li>
+											<li><a href="#" id="fighter" onclick="selectedClass(this.id, this.innerHTML)">Fighter</a></li>
+											<li><a href="#" id="monk" onclick="selectedClass(this.id, this.innerHTML)">Monk</a></li>
+											<li><a href="#" id="paladin" onclick="selectedClass(this.id, this.innerHTML)">Paladin</a></li>
+											<li><a href="#" id="ranger" onclick="selectedClass(this.id, this.innerHTML)">Ranger</a></li>
+											<li><a href="#" id="rogue" onclick="selectedClass(this.id, this.innerHTML)">Rogue</a></li>
+											<li><a href="#" id="sorcerer" onclick="selectedClass(this.id, this.innerHTML)">Sorcerer</a></li>
+											<li><a href="#" id="warlock" onclick="selectedClass(this.id, this.innerHTML)">Warlock</a></li>
+											<li><a href="#" id="wizard" onclick="selectedClass(this.id, this.innerHTML)">Wizard</a></li>
+
+
+    									<li role="separator2" class="divider"></li>
+											<li><a href="#" id="none2" onclick="selectedClass(this.id, this.innerHTML)">Choose a class</a></li>
+										</ul>
+									</div>
+							</div>
+							<div class="col-xs-12"></div>
+							<div class="col-xs-12"></div>
+						</div>
+					</div>
+				</div>
+				<!--.row-->
+
+				<div class="row">
+						<div class="panel panel-primary ">
 
 							<div class="panel-heading">
 								<h3>Point Buy System Calculator</h3>
@@ -33,7 +69,7 @@
 								
 								<div class="col-xs-12" id="race">
 									<div class="btn-group btn-lg btn-block dropdown">
-										<button class="btn btn-default btn-lg btn-block dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-hashpopup="true">
+										<button name="raceButton" class="btn btn-info btn-lg btn-block dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-hashpopup="true">
 											Choose a race <span class="caret"></span>
 										</button>
 										<ul class="dropdown-menu  text-center dropdown-menu-center" aria-labelledby="dropdownMenu1">
@@ -270,7 +306,7 @@
 								<!--.col-xs-12-->
 
 								<div class="col-xs-4 col-xs-offset-8">
-									<div class="panel panel-default">	
+									<div class="panel panel-warning">	
 										<div class="panel-heading">
 											<h4>Cost of points</h4>
 										</div>
@@ -318,11 +354,6 @@
 				<!--.row-->
 
 				<div class="row">
-					
-				</div>
-				<!--.row-->
-
-				<div class="row">
 					<footer class="col-xs-12">
 						<p class="text-center">&copy; Angel copyright 2016</p></span>						
 					</footer>
@@ -338,6 +369,6 @@
 		<!-- Bootstrap Core JavaScript -->
 		<script src="bootstrap/dist/js/bootstrap.min.js"></script>
 		<!-- Custom JavaScript file -->
-		<script src="public/js/main.js"></script>
+		<script src="js/main.js"></script>
 	</body>
 </html>

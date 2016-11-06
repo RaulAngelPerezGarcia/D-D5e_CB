@@ -6,6 +6,7 @@ var port 		= process.env.PORT || 8080;
 var router 		= express.Router(); 
 
 app.use(express.static(path.join(__dirname + '/node_modules')));
+app.use(express.static(path.join(__dirname + '/assets')));
 
 app.get('/', function(req, res){
 	res.sendFile(path.join(__dirname, 'views/index.html'));
