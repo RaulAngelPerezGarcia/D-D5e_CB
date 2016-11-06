@@ -161,20 +161,24 @@ function selectedRace(id, textIn){
 		document.getElementById('racialCha').value = 0;	
 	}
 	console.log(textIn);
-	dropdown(textIn);
+	dropdown(textIn, 'raceButton');
 	update();
 }
 
 
 // Select the id function
 function selectedClass(id, textIn){
-	dropdown(textIn);
+	var hitDie
+	var primaryAbility
+	var savingThrows
+	var proficiencies
+	dropdown(textIn, 'classButton');
 }
 
 
 //This function sets the name of the dropdown to the selected token
-function dropdown(val) {
-	var y = document.getElementsByClassName('btn btn-info btn-lg btn-block dropdown-toggle');
+function dropdown(val, name) {
+	var y = document.getElementsByName(name);
 	var aNode = y[0].innerHTML = val + ' <span class="caret"></span>'; // Append 
 }
 
@@ -241,3 +245,16 @@ function calcCost(number){
 	}
 	return cost;
 }
+
+
+function clearing(){
+	selectedRace("none","Choose a race");
+	selectedClass("none","Choose a class");
+	document.getElementById('disp' + 'Str').value = 8;
+	document.getElementById('disp' + 'Dex').value = 8;
+	document.getElementById('disp' + 'Con').value = 8;
+	document.getElementById('disp' + 'Int').value = 8;
+	document.getElementById('disp' + 'Wis').value = 8;
+	document.getElementById('disp' + 'Cha').value = 8;
+	update();
+};
