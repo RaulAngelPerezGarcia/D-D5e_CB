@@ -81,7 +81,7 @@ function selectedRace(id, textIn){
 		document.getElementById('racialCon').value = 0;
 		document.getElementById('racialInt').value = 1;
 		document.getElementById('racialWis').value = 0;
-		document.getElementById('racialCha').value = 1;		
+		document.getElementById('racialCha').value = 0;		
 	} else if (id == "elfWood"){
 		document.getElementById('racialStr').value = 0;
 		document.getElementById('racialDex').value = 2;
