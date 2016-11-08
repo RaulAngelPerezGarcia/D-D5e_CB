@@ -193,97 +193,109 @@ var dataRace = {
 var dataClass = {
 	'barbarian':{
 		'description' : 'A fierce warrior of primitive background who can enter a battle rage.',
-		'hitDie' : '',
-		'savingThrows' : '',
-		'armorProficiency' : '',
-		'weaponProficiency' : '',
+		'hitDie' : 'd12',
+		'savingThrow1' : 'strength',
+		'savingThrow2' : 'constitution',
+		'armorProficiency' : ['light', 'medium', 'shield'],
+		'weaponProficiency' : ['simple', 'martial'],
 		'primaryAbility' : ''
 	},
 	'bard':{
 		'description' : 'An inspiring magician whose power echoes the music of creation.',
-		'hitDie' : '',
-		'savingThrows' : '',
+		'hitDie' : 'd8',
+		'savingThrow1' : 'dexterity',
+		'savingThrow2' : 'charisma',
 		'armorProficiency' : '',
 		'weaponProficiency' : '',
 		'primaryAbility' : ''
 	},
 	'cleric':{
 		'description' : 'A priestly champion who wields divine magic in service of a higher power.',
-		'hitDie' : '',
-		'savingThrows' : '',
+		'hitDie' : 'd8',
+		'savingThrow1' : 'wisdom',
+		'savingThrow2' : 'charisma',
 		'armorProficiency' : '',
 		'weaponProficiency' : '',
 		'primaryAbility' : ''
 	},
 	'druid':{
 		'description' : 'A priest of the Old Faith, wielding the powers of nature - moonlight and plant growth' +
-                             ', fire and lightning - and adopting animal forms.',
-		'hitDie' : '',
-		'savingThrows' : '',
+						', fire and lightning - and adopting animal forms.',
+		'hitDie' : 'd8',
+		'savingThrow1' : 'intelligence',
+		'savingThrow2' : 'wisdom',
 		'armorProficiency' : '',
 		'weaponProficiency' : '',
 		'primaryAbility' : ''
 	},
 	'fighter':{
 		'description' : 'A master of martial combat, skilled with a variety of weapons and armor.',
-		'hitDie' : '',
-		'savingThrows' : '',
+		'hitDie' : 'd10',
+		'savingThrow1' : 'strength',
+		'savingThrow2' : 'constitution',
 		'armorProficiency' : '',
 		'weaponProficiency' : '',
 		'primaryAbility' : ''
 	},
 	'monk':{
 		'description' : 'A master of martial arts, skilled with fighting hands and martial monk weapons.',
-		'hitDie' : '',
-		'savingThrows' : '',
+		'hitDie' : 'd8',
+		'savingThrow1' : 'strength',
+		'savingThrow2' : 'dexterity',
 		'armorProficiency' : '',
 		'weaponProficiency' : '',
 		'primaryAbility' : ''
 	},
 	'paladin':{
 		'description' : 'A holy warrior bound to a sacred oath.',
-		'hitDie' : '',
-		'savingThrows' : '',
+		'hitDie' : 'd10',
+		'savingThrow1' : 'wisdom',
+		'savingThrow2' : 'charisma',
 		'armorProficiency' : '',
 		'weaponProficiency' : '',
 		'primaryAbility' : ''
 	},
 	'ranger':{
 		'description' : 'A master of ranged combat, one with nature.',
-		'hitDie' : '',
-		'savingThrows' : '',
+		'hitDie' : 'd10',
+		'savingThrow1' : 'strength',
+		'savingThrow2' : 'dexterity',
 		'armorProficiency' : '',
 		'weaponProficiency' : '',
 		'primaryAbility' : ''
 	},
 	'rogue':{
 		'description' : 'A scoundrel who uses stealth and trickery to overcome obstacles and enemies.',
-		'hitDie' : '',
-		'savingThrows' : '',
+		'hitDie' : 'd8',
+		'savingThrow1' : 'dexterity',
+		'savingThrow2' : 'intelligence',
 		'armorProficiency' : '',
 		'weaponProficiency' : '',
 		'primaryAbility' : ''
 	},
 	'sorcerer':{
 		'description' : 'A spell-caster who draws on inherent magic from a gift or bloodline.',
-		'hitDie' : '',
-		'savingThrows' : '',
+		'hitDie' : 'd6',
+		'savingThrow1' : 'constitution',
+		'savingThrow2' : 'charisma',
 		'armorProficiency' : '',
 		'weaponProficiency' : '',
 		'primaryAbility' : ''
 	},
 	'warlock':{
 		'description' : 'A wielder of magic that is derived from a bargain with an extraplanar entity.',
-		'hitDie' : '',
-		'savingThrows' : '',
+		'hitDie' : 'd8',
+		'savingThrow1' : 'wisdom',
+		'savingThrow2' : 'charisma',
 		'armorProficiency' : '',
 		'weaponProficiency' : '',
 		'primaryAbility' : ''
 	},
 	'wizard':{
 		'description' : 'A scholarly magic-user capable of manipulating the structures of reality.',
-		'hitDie' : '',
-		'savingThrows' : '',
+		'hitDie' : 'd6',
+		'savingThrow1' : 'intelligence',
+		'savingThrow2' : 'wisdom',
 		'armorProficiency' : '',
 		'weaponProficiency' : '',
 		'primaryAbility' : ''
@@ -291,7 +303,8 @@ var dataClass = {
 	'none2':{
 		'description' : '',
 		'hitDie' : '',
-		'savingThrows' : '',
+		'savingThrow1' : '',
+		'savingThrow2' : '',
 		'armorProficiency' : '',
 		'weaponProficiency' : '',
 		'primaryAbility' : ''

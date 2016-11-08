@@ -69,6 +69,13 @@ function selectedRace(id, textIn){
 
 // Select the id function
 function selectedClass(id, textIn){
+	document.getElementById('classDescription').innerHTML = dataClass[id].description;
+	document.getElementById('hitDie').innerHTML = dataClass[id].hitDie;
+	document.getElementById('savingThrows').innerHTML = dataClass[id].savingThrow1 + ' ' + dataClass[id].savingThrow2;
+	document.getElementById('armorProficiency').innerHTML = dataClass[id].armorProficiency;
+	document.getElementById('weaponProficiency').innerHTML = dataClass[id].weaponProficiency;
+
+
 	var hitDie
 	var primaryAbility
 	var savingThrows
@@ -129,8 +136,8 @@ function showRaceImage(selRace){
 
 
 function clearing(){
+	selectedClass("none2","Choose a class");
 	selectedRace("none","Choose a race");
-	selectedClass("none","Choose a class");
 	document.getElementById('disp' + 'Str').value = 8;
 	document.getElementById('disp' + 'Dex').value = 8;
 	document.getElementById('disp' + 'Con').value = 8;
