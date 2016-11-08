@@ -7,14 +7,13 @@ update();
 // Here all the Base values are calculated
 function incBase(idTag){
 	var base = +document.getElementById('disp'+idTag).value;
-	var costStat = calcCost(base);
-	var costStatp1 = calcCost(base);
+	var costStat = cost[base];
 
 	if (base <= 14){
 			var newBase = base + +1;
 			document.getElementById('disp' + idTag).value = newBase;
-			var cost = calcCost(newBase);
-			document.getElementById('cost' + idTag).value = cost;
+			var tagCost = cost[newBase];
+			document.getElementById('cost' + idTag).value = tagCost;
 			calculateAll(idTag)
 			remaining();
 	}
@@ -26,8 +25,8 @@ function decBase(idTag){
 	if (base >= 9){
 		var newBase = base - +1;
 		document.getElementById('disp' + idTag).value = newBase;
-		var cost = calcCost(newBase);
-		document.getElementById('cost' + idTag).value = cost;
+		var tagCost = cost[newBase];
+		document.getElementById('cost' + idTag).value = tagCost;
 		calculateAll(idTag)
 		remaining();
 	}
@@ -63,9 +62,8 @@ function selectedRace(id, textIn){
 
 	setDropText(textIn, 'raceButton');
 	showRaceImage(id);
-	update();
-	console.log(dataRace[id].description)
-
+	document.getElementById('raceDescription').innerHTML = dataRace[id].description;
+	//console.log(dataRace[id].description)
 };
 
 
@@ -86,19 +84,11 @@ function setDropText(val, name) {
 };
 
 
-function update(){
-	calculateAll('Str');
-	calculateAll('Dex');
-	calculateAll('Con');
-	calculateAll('Int');
-	calculateAll('Wis');
-	calculateAll('Cha');
-};
 
 function calculateAll(idTag){
 	calcScore(idTag);
 	calcMod(idTag);
-	document.getElementById('cost'+idTag).value = calcCost(document.getElementById('disp'+idTag).value);
+	document.getElementById('cost'+idTag).value = cost[document.getElementById('disp'+idTag).value];
 	remaining();
 };
 
@@ -124,28 +114,17 @@ function calcMod(idTag){
 };
 
 
-function calcCost(number){
-	var cost = 50;
-	if (number == 8){
-		cost = 0;
-	}else if( number == 9){
-		cost = 1;
-	}else if( number == 10){
-		cost = 2;
-	}else if( number == 11){
-		cost = 3;
-	}else if( number == 12){
-		cost = 4;
-	}else if( number == 13){
-		cost = 5;
-	}else if( number == 14){
-		cost = 7;
-	}else if( number == 15){
-		cost = 9;
-	}else {
-		cost = 27
+
+function showRaceImage(selRace){
+	var dv = document.getElementById('raceImage');
+	// remove all child nodes
+	while (dv.hasChildNodes()) { 
+		dv.removeChild(dv.lastChild); 
 	}
-	return cost;
+	var img = document.createElement("IMG");
+
+	img.setAttribute('src', dataRace[selRace].imgScr);
+	dv.appendChild(img);
 };
 
 
@@ -161,16 +140,12 @@ function clearing(){
 	update();
 };
 
-function showRaceImage(selRace){
-	var dv = document.getElementById('raceImage');
-	// remove all child nodes
-	while (dv.hasChildNodes()) { 
-		dv.removeChild(dv.lastChild); 
-	}
-	var img = document.createElement("IMG");
 
-	img.setAttribute('src', dataRace[selRace].imgScr);
-	dv.appendChild(img);
+function update(){
+	calculateAll('Str');
+	calculateAll('Dex');
+	calculateAll('Con');
+	calculateAll('Int');
+	calculateAll('Wis');
+	calculateAll('Cha');
 };
-
-
