@@ -12,6 +12,9 @@ var dataRace = {
 		'racialInt' : 1,
 		'racialWis' : 1,
 		'racialCha' : 1,
+		'speed': 25,
+		'languages': [''],
+		'traits' : [''],
 		'imgScr' : 'http://cdn.obsidianportal.com/images/65157/keldar.jpg'
 	},	
 	'dwarfHill': {
@@ -25,7 +28,10 @@ var dataRace = {
 		'racialCon' : 2,
 		'racialInt' : 0,
 		'racialWis' : 1,
-		'racialCha' : 0,
+		'racialCha' : 1,
+		'speed': 25,
+		'languages': [''],
+		'traits' : [''],
 		'imgScr' : 'http://vignette1.wikia.nocookie.net/shattered-lands/images/9/95/Ulfberht.jpg/revision/latest?cb=20130213153257'
 	},	
 	'dwarfMountain': {
@@ -35,7 +41,10 @@ var dataRace = {
 		'racialCon' : 2,
 		'racialInt' : 0,
 		'racialWis' : 0,
-		'racialCha' : 0,
+		'racialCha' : 1,
+		'speed': 25,
+		'languages': [''],
+		'traits' : [''],
 		'imgScr' : 'http://vignette1.wikia.nocookie.net/shattered-lands/images/9/95/Ulfberht.jpg/revision/latest?cb=20130213153257'
 	},	
 	'elfHigh': {
@@ -48,7 +57,10 @@ var dataRace = {
 		'racialCon' : 0,
 		'racialInt' : 1,
 		'racialWis' : 0,
-		'racialCha' : 0,
+		'racialCha' : 1,
+		'speed': 25,
+		'languages': [''],
+		'traits' : [''],
 		 'imgScr' : 'http://varg.wdfiles.com/local--files/se-mage/19455High_Elf_Avatar_by_Graysun_D.jpg'
 	},	
 	'elfWood': {
@@ -58,7 +70,10 @@ var dataRace = {
 		'racialCon' : 0,
 		'racialInt' : 0,
 		'racialWis' : 1,
-		'racialCha' : 0,
+		'racialCha' : 1,
+		'speed': 25,
+		'languages': [''],
+		'traits' : [''],
 		 'imgScr' : 'http://varg.wdfiles.com/local--files/se-mage/19455High_Elf_Avatar_by_Graysun_D.jpg'
 	},	
 	'elfDrow': {
@@ -69,6 +84,9 @@ var dataRace = {
 		'racialInt' : 0,
 		'racialWis' : 0,
 		'racialCha' : 1,
+		'speed': 25,
+		'languages': [''],
+		'traits' : [''],
 		 'imgScr' : 'http://varg.wdfiles.com/local--files/se-mage/19455High_Elf_Avatar_by_Graysun_D.jpg'
 	},	
 	'halflingLightfoot': {
@@ -83,6 +101,9 @@ var dataRace = {
 		'racialInt' : 0,
 		'racialWis' : 0,
 		'racialCha' : 1,
+		'speed': 25,
+		'languages': [''],
+		'traits' : [''],
 		'imgScr' : 'https://db4sgowjqfwig.cloudfront.net/images/920420/Rosie_Cusswell.jpg'
 		
 	},	
@@ -93,7 +114,10 @@ var dataRace = {
 		'racialCon' : 1,
 		'racialInt' : 0,
 		'racialWis' : 0,
-		'racialCha' : 0, 
+		'racialCha' : 1,
+		'speed': 25,
+		'languages': [''],
+		'traits' : [''], 
 		'imgScr' : 'https://db4sgowjqfwig.cloudfront.net/images/920420/Rosie_Cusswell.jpg'
 	},	
 	'dragonborn': {
@@ -106,7 +130,10 @@ var dataRace = {
 		'racialCon' : 0,
 		'racialInt' : 0,
 		'racialWis' : 0,
-		'racialCha' : 1, 
+		'racialCha' : 1,
+		'speed': 25,
+		'languages': [''],
+		'traits' : [''], 
 		'imgScr' : 'https://s-media-cache-ak0.pinimg.com/564x/73/78/65/737865c6dbf5c9fdd4b7d982ae096b04.jpg'
 	},	
 	'gnomeForest': {
@@ -120,7 +147,10 @@ var dataRace = {
 		'racialCon' : 0,
 		'racialInt' : 2,
 		'racialWis' : 0,
-		'racialCha' : 0, 
+		'racialCha' : 1,
+		'speed': 25,
+		'languages': [''],
+		'traits' : [''], 
 		'imgScr' : 'https://holiviantales.files.wordpress.com/2015/04/garl.png?w=470'
 	},	
 	'gnomeRock': {
@@ -130,7 +160,10 @@ var dataRace = {
 		'racialCon' : 1,
 		'racialInt' : 2,
 		'racialWis' : 0,
-		'racialCha' : 0, 
+		'racialCha' : 1,
+		'speed': 25,
+		'languages': [''],
+		'traits' : [''], 
 		'imgScr' : 'https://holiviantales.files.wordpress.com/2015/04/garl.png?w=470'
 	},	
 	'halfElf': {
@@ -145,7 +178,10 @@ var dataRace = {
 		'racialCon' : 0,
 		'racialInt' : 0,
 		'racialWis' : 0,
-		'racialCha' : 1, 
+		'racialCha' : 1,
+		'speed': 25,
+		'languages': [''],
+		'traits' : [''], 
 		'imgScr' : 'https://s-media-cache-ak0.pinimg.com/originals/02/01/f5/0201f5e43c30ed7fabc517c8254245c8.jpg'
 	},	
 	'halfOrc': {
@@ -161,7 +197,10 @@ var dataRace = {
 		'racialCon' : 1,
 		'racialInt' : 0,
 		'racialWis' : 0,
-		'racialCha' : 0, 
+		'racialCha' : 1,
+		'speed': 25,
+		'languages': [''],
+		'traits' : [''], 
 		'imgScr' : 'https://s-media-cache-ak0.pinimg.com/564x/98/2a/a5/982aa5c0b1a43606f472a9273c0c9bef.jpg'
 	},	
 	'tiefling': {
@@ -176,6 +215,9 @@ var dataRace = {
 		'racialInt' : 1,
 		'racialWis' : 0,
 		'racialCha' : 2, 
+		'speed': 25,
+		'languages': [''],
+		'traits' : [''], 
 		'imgScr' : 'https://s-media-cache-ak0.pinimg.com/236x/51/33/34/513334f69ce4f629a4024a07f6d49d97.jpg'
 	},
 	'none': {
@@ -185,7 +227,10 @@ var dataRace = {
 		'racialCon' : 0,
 		'racialInt' : 0,
 		'racialWis' : 0,
-		'racialCha' : 0, 
+		'racialCha' : 1,
+		'speed': 0,
+		'languages': [''],
+		'traits' : [''], 
 		'imgScr' : 'https://thewhisperingway.files.wordpress.com/2013/07/386_ca_cleric2.jpg'
 	}
 };
@@ -198,25 +243,25 @@ var dataClass = {
 		'savingThrow2' : 'constitution',
 		'armorProficiency' : ['light', 'medium', 'shield'],
 		'weaponProficiency' : ['simple', 'martial'],
-		'primaryAbility' : ''
+		'primaryAbility' : 'strength'
 	},
 	'bard':{
 		'description' : 'An inspiring magician whose power echoes the music of creation.',
 		'hitDie' : 'd8',
 		'savingThrow1' : 'dexterity',
 		'savingThrow2' : 'charisma',
-		'armorProficiency' : '',
-		'weaponProficiency' : '',
-		'primaryAbility' : ''
+		'armorProficiency' : 'light',
+		'weaponProficiency' : ['simple', 'handCrossbow', 'rapier', 'longsword', 'shortsword'],
+		'primaryAbility' : 'charisma'
 	},
 	'cleric':{
 		'description' : 'A priestly champion who wields divine magic in service of a higher power.',
 		'hitDie' : 'd8',
 		'savingThrow1' : 'wisdom',
 		'savingThrow2' : 'charisma',
-		'armorProficiency' : '',
-		'weaponProficiency' : '',
-		'primaryAbility' : ''
+		'armorProficiency' : ['light', 'medium', 'shield'],
+		'weaponProficiency' : 'simple',
+		'primaryAbility' : 'wisdom'
 	},
 	'druid':{
 		'description' : 'A priest of the Old Faith, wielding the powers of nature - moonlight and plant growth' +
@@ -224,18 +269,18 @@ var dataClass = {
 		'hitDie' : 'd8',
 		'savingThrow1' : 'intelligence',
 		'savingThrow2' : 'wisdom',
-		'armorProficiency' : '',
-		'weaponProficiency' : '',
-		'primaryAbility' : ''
+		'armorProficiency' : ['light', 'medium', 'shield'],
+		'weaponProficiency' : ['club', 'dagger', 'dart', 'javelin', 'mace', 'quarterstaff', 'scimitar', 'sickle', 'sling', 'spear'],
+		'primaryAbility' : 'wisdom'
 	},
 	'fighter':{
 		'description' : 'A master of martial combat, skilled with a variety of weapons and armor.',
 		'hitDie' : 'd10',
 		'savingThrow1' : 'strength',
 		'savingThrow2' : 'constitution',
-		'armorProficiency' : '',
-		'weaponProficiency' : '',
-		'primaryAbility' : ''
+		'armorProficiency' : ['all', 'shield'],
+		'weaponProficiency' :  ['simple', 'martial'],
+		'primaryAbility' : ['strength', 'dexterity']
 	},
 	'monk':{
 		'description' : 'A master of martial arts, skilled with fighting hands and martial monk weapons.',
@@ -243,35 +288,35 @@ var dataClass = {
 		'savingThrow1' : 'strength',
 		'savingThrow2' : 'dexterity',
 		'armorProficiency' : '',
-		'weaponProficiency' : '',
-		'primaryAbility' : ''
+		'weaponProficiency' : ['simple', 'shortsword'],
+		'primaryAbility' : ['wisdom', 'dexterity']
 	},
 	'paladin':{
 		'description' : 'A holy warrior bound to a sacred oath.',
 		'hitDie' : 'd10',
 		'savingThrow1' : 'wisdom',
 		'savingThrow2' : 'charisma',
-		'armorProficiency' : '',
-		'weaponProficiency' : '',
-		'primaryAbility' : ''
+		'armorProficiency' : ['all', 'shield'],
+		'weaponProficiency' : ['simple', 'martial'],
+		'primaryAbility' : ['strength', 'charisma']
 	},
 	'ranger':{
 		'description' : 'A master of ranged combat, one with nature.',
 		'hitDie' : 'd10',
 		'savingThrow1' : 'strength',
 		'savingThrow2' : 'dexterity',
-		'armorProficiency' : '',
-		'weaponProficiency' : '',
-		'primaryAbility' : ''
+		'armorProficiency' : ['light', 'medium', 'shield'],
+		'weaponProficiency' : ['simple', 'martial'],
+		'primaryAbility' : ['wisdom', 'dexterity']
 	},
 	'rogue':{
 		'description' : 'A scoundrel who uses stealth and trickery to overcome obstacles and enemies.',
 		'hitDie' : 'd8',
 		'savingThrow1' : 'dexterity',
 		'savingThrow2' : 'intelligence',
-		'armorProficiency' : '',
-		'weaponProficiency' : '',
-		'primaryAbility' : ''
+		'armorProficiency' : 'light',
+		'weaponProficiency' : ['simple', 'handCrossbow', 'longsword', 'rapier', 'shortsword'],
+		'primaryAbility' : 'dexterity'
 	},
 	'sorcerer':{
 		'description' : 'A spell-caster who draws on inherent magic from a gift or bloodline.',
@@ -279,17 +324,17 @@ var dataClass = {
 		'savingThrow1' : 'constitution',
 		'savingThrow2' : 'charisma',
 		'armorProficiency' : '',
-		'weaponProficiency' : '',
-		'primaryAbility' : ''
+		'weaponProficiency' : ['dagger', 'dart', 'sling', 'quarterstaff', 'lightCrossbow'],
+		'primaryAbility' : 'charisma'
 	},
 	'warlock':{
 		'description' : 'A wielder of magic that is derived from a bargain with an extraplanar entity.',
 		'hitDie' : 'd8',
 		'savingThrow1' : 'wisdom',
 		'savingThrow2' : 'charisma',
-		'armorProficiency' : '',
-		'weaponProficiency' : '',
-		'primaryAbility' : ''
+		'armorProficiency' : 'light',
+		'weaponProficiency' : 'simple',
+		'primaryAbility' : 'charisma'
 	},
 	'wizard':{
 		'description' : 'A scholarly magic-user capable of manipulating the structures of reality.',
@@ -297,17 +342,17 @@ var dataClass = {
 		'savingThrow1' : 'intelligence',
 		'savingThrow2' : 'wisdom',
 		'armorProficiency' : '',
-		'weaponProficiency' : '',
-		'primaryAbility' : ''
+		'weaponProficiency' : ['dagger', 'dart', 'sling', 'quarterstaff', 'lightCrossbow'],
+		'primaryAbility' : 'intelligence'
 	},
 	'none2':{
-		'description' : '',
-		'hitDie' : '',
-		'savingThrow1' : '',
-		'savingThrow2' : '',
-		'armorProficiency' : '',
-		'weaponProficiency' : '',
-		'primaryAbility' : ''
+		'description' : '-',
+		'hitDie' : '-',
+		'savingThrow1' : '-',
+		'savingThrow2' : '-',
+		'armorProficiency' : '-',
+		'weaponProficiency' : '-',
+		'primaryAbility' : '-'
 	}
 };
 
