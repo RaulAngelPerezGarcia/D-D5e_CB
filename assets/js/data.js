@@ -227,7 +227,7 @@ var dataRace = {
 		'racialCon' : 0,
 		'racialInt' : 0,
 		'racialWis' : 0,
-		'racialCha' : 1,
+		'racialCha' : 0,
 		'speed': 0,
 		'languages': [''],
 		'traits' : [''], 

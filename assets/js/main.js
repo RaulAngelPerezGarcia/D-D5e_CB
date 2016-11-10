@@ -75,11 +75,6 @@ function selectedClass(id, textIn){
 	document.getElementById('armorProficiency').innerHTML = dataClass[id].armorProficiency;
 	document.getElementById('weaponProficiency').innerHTML = dataClass[id].weaponProficiency;
 
-
-	var hitDie
-	var primaryAbility
-	var savingThrows
-	var proficiencies
 	setDropText(textIn, 'classButton');
 };
 
@@ -155,4 +150,5 @@ function update(){
 	calculateAll('Int');
 	calculateAll('Wis');
 	calculateAll('Cha');
+	showRaceImage('none');
 };
