@@ -10,12 +10,11 @@ function incBase(idTag){
 	var costStat = cost[base];
 
 	if (base <= 14){
-			var newBase = base + +1;
-			document.getElementById('disp' + idTag).value = newBase;
-			var tagCost = cost[newBase];
-			document.getElementById('cost' + idTag).value = tagCost;
-			calculateAll(idTag)
-			remaining();
+		var newBase = base + +1;
+		document.getElementById('disp' + idTag).value = newBase;
+		var tagCost = cost[newBase];
+		document.getElementById('cost' + idTag).value = tagCost;
+		calculateAll(idTag)
 	}
 
 };
@@ -28,16 +27,9 @@ function decBase(idTag){
 		var tagCost = cost[newBase];
 		document.getElementById('cost' + idTag).value = tagCost;
 		calculateAll(idTag)
-		remaining();
 	}
 };
 
-// This function handles the remaining points 
-function remaining(){
-	var remp = +27 - +totalCost()
-	document.getElementById('remp').value = +remp;
-	return remp;
-};
 
 function totalCost(){
 	var totCost = +document.getElementById('costStr').value 
@@ -88,12 +80,20 @@ function setDropText(val, name) {
 
 
 function calculateAll(idTag){
+	console.log(idTag);
 	calcScore(idTag);
 	calcMod(idTag);
 	document.getElementById('cost'+idTag).value = cost[document.getElementById('disp'+idTag).value];
+	uptadeCs(idTag);
 	remaining();
 };
 
+// This function handles the remaining points 
+function remaining(){
+	var remp = +27 - +totalCost()
+	document.getElementById('remp').value = +remp;
+	return remp;
+};
 
 // Here all the Scores values are calculated
 function calcScore(idTag){
@@ -106,6 +106,7 @@ function calcScore(idTag){
 // Here all the Modifiers values are calculated
 function calcMod(idTag){
 	var score = document.getElementById('score'+idTag).value;
+	//var scoreCs = document.getElementById('score'+idTag+'Cs').value; //New
 	var modifier;
 	modifier = Math.floor((score/2)-5)
 	if (modifier>0){
@@ -152,3 +153,12 @@ function update(){
 	calculateAll('Cha');
 	showRaceImage('none');
 };
+
+function uptadeCs(idTag){
+	//Update Score, mods, calculate saving throw mods, skills, speed, armor
+	var score = document.getElementById('score'+idTag).value;
+	var modifier = document.getElementById('modifier'+idTag).value
+	document.getElementById('score'+idTag+'Cs').value = score; 
+	document.getElementById('modifier'+idTag+'Cs').value = modifier; 
+
+}
