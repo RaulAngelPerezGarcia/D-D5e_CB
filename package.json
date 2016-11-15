@@ -1,0 +1,27 @@
+{
+  "name": "characterbuilder",
+  "version": "1.0.0",
+  "description": "Creating a Dungeons and Dragons 5e character builder",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RaulAngelPerezGarcia/D-D5e_CB.git"
+  },
+  "keywords": [
+    "DnD"
+  ],
+  "author": "Raul Angel Perez Garcia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RaulAngelPerezGarcia/D-D5e_CB/issues"
+  },
+  "homepage": "https://github.com/RaulAngelPerezGarcia/D-D5e_CB#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "express": "^4.14.0",
+    "jquery": "^3.1.1"
+  }
+}
