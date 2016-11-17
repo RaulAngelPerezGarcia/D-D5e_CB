@@ -1,15 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 import ReactDOM from "react-dom"
-import './App.css';
 
+import Layout from "./components/Layout";
 
-class App extends Component {
+const app = document.getElementById('root');
 
-	render() {
-		return (
-			
-		);
-	}
-}
-
-export default App;
+ReactDOM.render(<Layout/>, app);
