@@ -13,7 +13,7 @@ var dataRace = {
 		'racialWis' : 1,
 		'racialCha' : 1,
 		'speed': 25,
-		'languages': [''],
+		'languages': ['common', 'dwarven'],
 		'traits' : [''],
 		'imgScr' : 'http://cdn.obsidianportal.com/images/65157/keldar.jpg'
 	},	
@@ -221,7 +221,7 @@ var dataRace = {
 		'imgScr' : 'https://s-media-cache-ak0.pinimg.com/236x/51/33/34/513334f69ce4f629a4024a07f6d49d97.jpg'
 	},
 	'none': {
-		'description' : '',
+		'description' : '-',
 		'racialStr' : 0,
 		'racialDex' : 0,
 		'racialCon' : 0,
@@ -356,6 +356,17 @@ var dataClass = {
 	}
 };
 
+var alignment = {
+	LG: {
+		name: 'Lawful good'
+		description:'Creatures can be counted on to do the right thing as expected by society'
+	}
+}
+
+var languages = {
+	
+}
+
 // Costs of points
 var cost = {
 	8 :  +0,
@@ -367,3 +378,4 @@ var cost = {
 	14 : +7,
 	15 : +9
 };
+

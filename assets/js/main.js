@@ -31,7 +31,7 @@ function decBase(idTag){
 };
 
 
-function totalCost(){
+function totalCost(){// parseInt()
 	var totCost = +document.getElementById('costStr').value 
 		+ +document.getElementById('costDex').value 
 		+ +document.getElementById('costCon').value 
