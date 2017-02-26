@@ -25,7 +25,7 @@ After installing I run it in a local server listening to the port 8080
 In order to run it go to the original folder and run it with:
 
 ```
-npm app.js
+node app.js
 ```
 and go to 'http://localhost:8080/' while it is running
 
